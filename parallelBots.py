@@ -126,7 +126,8 @@ exitFlag = 1
 
 # Wait for all the job to complete
 for t in threads:
-    t.join()
+    t.join(240)
+    
 
 print "Exiting Main Bot"
 
